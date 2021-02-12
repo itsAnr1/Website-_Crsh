@@ -1,17 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #007AF3;
+    --primary-color: #393939;
 }
 
 body {
-    background: #F2F2F2;
+    background: #000;
     margin: 0;
     font-family: 'Poppins';
 }
 
+
+.aetherrow > .aethercolumn {
+    padding: 0 8px;
+  }
+  
+  .aetherrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .aethercolumn {
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img {
+    margin-bottom: -4px;
+    display: flex;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .aetherrow  h1 {
+      text-align: center;
+    color: white;
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: -3em;
+}
+
+
+
+
+
+
 .navbar {
-    background: white;
+    background: 444444;
     padding: 1em;
 
     .logo {
@@ -21,7 +168,7 @@ body {
         font-size: 1.2em;
         
         span {
-            color: black;
+            color: white;
         }
     }
 
@@ -57,6 +204,15 @@ section {
     text-align: center;
 }
 
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/dark.jpg");
+    padding: 5em;
+    margin-top: -6em;
+    margin-bottom: -6em;
+    // margin: auto;
+}
+
+
 .left-col {
 
     .subhead {
@@ -67,6 +223,7 @@ section {
     }
 
     h1 {
+        color: white;
         font-size: 2.5em;
         line-height: 1.3em;
         margin-top: .2em;
@@ -94,12 +251,21 @@ section {
 }
 
 .hero-img {
+    
     width: 70%;
-    margin-top: 3em;
+    margin-left: 6em;
 }
 
 section.features-section {
     background: #20272E;
+    color: white;
+}
+
+section.features-section h1{
+    text-align: center;
+    margin-top: -3em;
+    font-weight: bold;
+    font-size: 2.6em;
     color: white;
 }
 
@@ -128,8 +294,24 @@ ul.features-list {
     }
 }
 
+
+.aetherrow > .aethercolumn {
+    padding: .5em;
+  }
+  
+  .aetherrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+
 .features-section img {
-    display: none;
+   margin-right: 9em;
+   margin-bottom: 10em;
+   border-radius: .5em;
+   top: 10em;
 }
 
 .testimonials-section {
@@ -260,9 +442,9 @@ nav {
         }
 
         a {
-            color: black;
-            font-size: 1em;
-            padding: .1em 1em;
+            color: white;
+    font-size: 1em;
+    padding: .1em 1em;
         }
 
         ul.primary-nav {

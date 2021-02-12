@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The 2021 Frontend Developer Crash Course</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="navbar">
         <div class="container">
-            <a class="logo" href="#">Aether  <span>Studios</span></a>
+            <a class="logo" href="#">Aether <span>Studios</span></a>
 
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
             <nav>
                 <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-                
+
                 <ul class="primary-nav">
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="#">Features</a></li>
@@ -30,27 +32,32 @@
         </div>
     </div>
 
+
     <section class="hero">
-        
-        <div class="container">
-            <div class="left-col">
-                <p class="subhead">It's Nitty &amp; Gritty</p>
-                <h1>A Task App That Doesn't Stink</h1>
 
-                <div class="hero-cta">
-                    <a href="#" class="primary-cta">Try for free</a>
-                    <a href="#" class="watch-video-cta">
-                        <img src="images/watch.svg" alt="Watch a video">Watch a video
-                    </a>
+        <div class="hero-image">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">It's Nitty &amp; Gritty</p>
+                    <h1>A Task App That Doesn't Stink</h1>
+
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">Try for free</a>
+                        <a href="#" class="watch-video-cta">
+                            <img src="images/watch.svg" alt="Watch a video">Watch a video
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+                <img src="images/aether.svg" class="hero-img" alt="Illustration">
+            </div>
         </div>
+        <!-- <img src="images/11.jpg" alt=""> -->
     </section>
 
     <section class="features-section">
         <div class="container">
+            <h1>About Me</h1>
             <ul class="features-list">
                 <li>Unlimited Tasks</li>
                 <li>SMS Task Reminders</li>
@@ -66,7 +73,7 @@
 
     <section class="testimonials-section">
         <div class="container">
-            <ul>
+            <!-- <ul>
                 <li>
                     <img src="images/person.jpg" alt="Person">
 
@@ -85,8 +92,70 @@
                     <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
                     <cite>- Jane Doe</cite>
                 </li>
-            </ul>
-        </div>
+            </ul> -->
+
+
+
+            <div class="aetherrow">
+                <h1>Gallery</h1>
+                <div class="aethercolumn">
+                    <img src="https://source.unsplash.com/random/500x401" style="width:100%"
+                        onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="aethercolumn">
+                    <img src="https://source.unsplash.com/random/500x402" style="width:100%"
+                        onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="aethercolumn">
+                    <img src="https://source.unsplash.com/random/500x403" style="width:100%"
+                        onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="aethercolumn">
+                    <img src="https://source.unsplash.com/random/500x403" style="width:100%"
+                        onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                <div class="aethercolumn">
+                    <img src="https://source.unsplash.com/random/500x403" style="width:100%"
+                        onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="aethercolumn">
+                    <img src="https://source.unsplash.com/random/500x403" style="width:100%"
+                        onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+             
+</div>
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="https://source.unsplash.com/random/500x401" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="https://source.unsplash.com/random/500x402" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="https://source.unsplash.com/random/500x403" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="https://source.unsplash.com/random/500x404" style="width:100%">
+                        </div>
+
+
+
+                        
+
+
+
+
+
+
+                    </div>
     </section>
 
     <section class="contact-section">
@@ -105,7 +174,10 @@
                 </form>
             </div>
             <div class="contact-right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26430.393553120906!2d-118.43209796322542!3d34.10028430183922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc35fbd217ef%3A0xcf1ef9352700d95c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1611702818717!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26430.393553120906!2d-118.43209796322542!3d34.10028430183922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc35fbd217ef%3A0xcf1ef9352700d95c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1611702818717!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </div>
 
         </div>
@@ -113,9 +185,49 @@
 
     <script>
 
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+
+
+
         const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit');
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
 
         mobileBtn.addEventListener('click', () => {
             nav.classList.add('menu-btn');
@@ -130,4 +242,5 @@
     </script>
 
 </body>
+
 </html>
